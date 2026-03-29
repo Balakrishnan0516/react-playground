@@ -1,0 +1,98 @@
+
+.product-card {
+  width: 260px;               
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  margin: 12px;
+}
+
+.shimmer-card {
+  background: linear-gradient(90deg, #f6f7f8 0%, #ededed 40%, #f6f7f8 100%);
+  background-size: 200% 100%;
+  animation: shimmer 1.2s linear infinite;
+  color: transparent;
+}
+
+.shimmer-header {
+  height: 40px;
+  border-radius: 12px 12px 0 0;
+  background: rgba(0,0,0,0.06);
+}
+
+.shimmer-img {
+  height: 160px; 
+  width: 100%;
+  background: rgba(0,0,0,0.06);
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.shimmer-body {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.shimmer-line {
+  height: 12px;
+  background: rgba(0,0,0,0.06);
+  border-radius: 6px;
+}
+
+.shimmer-line.title {
+  height: 16px;
+  width: 70%;
+}
+
+.shimmer-line.desc {
+  width: 90%;
+  height: 10px;
+}
+
+.shimmer-line.desc.short {
+  width: 60%;
+}
+
+.shimmer-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  gap: 12px;
+  border-top: 1px solid rgba(0,0,0,0.04);
+}
+
+.shimmer-pill {
+  height: 30px;
+  width: 48%;
+  border-radius: 18px;
+  background: rgba(0,0,0,0.06);
+}
+
+.shimmer-pill.small {
+  width: 28%;
+  height: 28px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+
+#products-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center; 
+}
